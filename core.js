@@ -4,8 +4,8 @@ var mailer = require("nodemailer");
 var smtpTransport = mailer.createTransport({
     service: "Gmail",
     auth: {
-        user: "mandy1339@gmail.com",
-        pass: "lokoman1339"
+        user: process.env.user,
+        pass: process.env.pass
     }
 });
 
